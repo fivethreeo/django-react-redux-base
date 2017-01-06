@@ -1,2 +1,2 @@
-call npm run django
-call npm run dev
+start npm run dev
+start npm run django

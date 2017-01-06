@@ -22,3 +22,5 @@ python-dateutil==2.5.3
 git+https://github.com/Seedstars/django-rest-logger.git
 
 django-rest-knox==2.2.0
+
+django-cors-headers
