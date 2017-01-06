@@ -9,7 +9,11 @@
     "mocha:watch": "npm run mocha -- --watch tests/js",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --require tests/require --recursive --compilers js:babel-core/register --colors --reporter dot tests/js/",
     "lintjs": "eslint -c .eslintrc src/static tests/js || true",
-    "lintscss": "sass-lint --verbose --no-exit || true"
+    "lintscss": "sass-lint --verbose --no-exit || true",
+    "djangovenv": "virtualenv env --system-site-packages && env\\Scripts\\pip install -r py-requirements\\dev.txt",
+    "djangomigrate": "cd src && ..\\env\\Scripts\\python manage.py migrate --settings=djangoreactredux.settings.dev && cd ..",
+    "djangoload": "cd src && ..\\env\\Scripts\\python manage.py loaddata fixtures.json --settings=djangoreactredux.settings.dev && cd ..",
+    "django": "cd src && ..\\env\\Scripts\\python manage.py runserver 0.0.0.0:8000 --settings=djangoreactredux.settings.dev && cd .."
   },
   "repository": {
     "type": "git",

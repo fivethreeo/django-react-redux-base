@@ -4,7 +4,6 @@
 .idea
 .vscode
 .settings
-
 # Random files
 *~
 \#*
@@ -41,3 +40,5 @@ shippable/
 
 # not include scripts because they come from external module
 scripts/
+
+env/
